@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Little Steps Big Impacts</title>
+  <link href="./styles.css" rel="stylesheet" type="text/css" />
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body id="body">
+
+  <!-- nav bar -->
+  <nav>
+    <input type="checkbox" id="check" onclick="removeStuff()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul class="nav">
+      <li class="navbar"><a id="curpage" href="./index.html">HOME</a></li>
+      <li class="navbar"><a style="text-decoration: none ;" href="./quiz/indexquiz.html">QUIZ</a></li>
+      <li class="navbar"><a style="text-decoration: none ;" href="contact us\index.html">CONTACT US</a></li>
+      <li class="navbar"><a style="text-decoration: none ;" href="About us\Aboutus.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+
+  <p class="decor" id="rreality">
+    REALITY
+  </p>
+
+  <!-- Rounded switch -->
+    <label class="switch" id="rswitch">
+        <input type="checkbox" id="myCheck" onclick="changebg()">
+        <span class="slider round"></span>
+    </label>
+
+<!-- on/off label -->
+<div class="onoff" id="ronoff">
+    <ul >
+        <li class="on">OFF</li>
+        <li class="on">ON</li>
+    </ul>
+</div>
+
+<!-- take the quiz button -->
+<a href="./quiz/indexquiz.html" id="rquiz">
+  <button class="quizbutton">TAKE THE QUIZ</button>
+</a>
+
+<!-- popup buttons-->
+
+<!--button -->
+<div class="hero-content1" id="hero-content1">
+  <a href="#" id="popupbtn1" class="popupbtn1"></a>
+</div>
+
+<div class="hero-content2" id="hero-content2">
+  <a href="#" id="popupbtn2" class="popupbtn2"></a>
+</div>
+
+<div class="hero-content3" id="hero-content3">
+  <a href="#" id="popupbtn3" class="popupbtn3"></a>
+</div>
+
+<div class="hero-content4" id="hero-content4">
+  <a href="#" id="popupbtn4" class="popupbtn4"></a>
+</div>
+
+<div class="hero-content5" id="hero-content5">
+  <a href="#" id="popupbtn5" class="popupbtn5"></a>
+</div>
+
+<div class="hero-content6" id="hero-content6">
+  <a href="#" id="popupbtn6" class="popupbtn6"></a>
+</div>
+
+<!-- popup -->
+<div class="bg-modal1">
+  <div class="modal-contents1">
+      <div class="close1">+</div>
+      <form action="">
+       <h1> 
+        Floods and Blood
+       </h1>
+       <p>
+        Global warming could also affect the weather patterns, leading to more droughts, flooding and extreme weather, such as hurricanes.
+        This will injure and kill more people. Extreme weather also leads to issues with food supply and increases in malnutrition, putting many of the world’s poorest people at serious risk.
+      </p>
+      </form>
+    </div> 
+  </div>
+  
+<!-- popup -->
+<div class="bg-modal2">
+  <div class="modal-contents2">
+      <div class="close2">+</div>
+      <form action="">
+        <h1 class="popuptext">Rising Ocean, Melting Ice</h1>  
+        <p class="popuptext"> 
+          Every global shore touches the same ocean, and the ocean is rising.</p>
+          <p class="popuptext">
+              Global warming could melt the world's ice caps and glaciers, leading to an increase in sea levels. Some scientists estimate that over the next hundred years sea levels could rise by between 10 cm and 90 cm - making many coastal areas around the world uninhabitable. 
+          </p>
+          <p class="popuptext" id="rising">
+             In fact, 147 to 216 million people live on land that will be below sea level or regular flood levels by the end of the century, assuming emissions of heat-trapping gases continue on their current trend.
+          </p>
+          <!-- <img src="" alt="image"></p> -->
+      </form>
+    </div> 
+  </div>
+  
+<!-- popup -->
+<div class="bg-modal3">
+<div class="modal-contents3">
+    <div class="close3">+</div>
+    <form action="">
+     <h1 class="popuptext"> 
+      Unbearable Climate
+     </h1>
+     <p>Many species of plants and animals will find they have to adapt to survive the changing climate conditions. </p>
+      <p>In the Arctic, polar bears are at risk as they have to swim much further between ice flows which uses up a lot more energy.    </p>
+      <p>Nature experts have noted that animal behaviour has changed with butterflies appearing earlier and many birds have different migration patterns than they once did.</p>
+    </form>
+</div>
+</div>  
+
+<!-- popup -->
+<div class="bg-modal4">
+  <div class="modal-contents4">
+      <div class="close4">+</div>
+      <form action="">
+        <h1>
+         Not Without Drought 
+        </h1>
+<p>Bouts of severe drought, heat and low humidity are becoming more extreme as the climate warms. As climate change makes hot and dry conditions – often termed “fire weather” – more common and severe, vegetation dries out and landscapes become more flammable, pushing up the odds of dangerous wildfires.</p>
+    </form>
+  </div> 
+</div>
+
+<!-- popup -->
+<div class="bg-modal5">
+  <div class="modal-contents5">
+      <div class="close5">+</div>
+      <form action="">
+        <h1>
+         No Tomorrow For Coral 
+        </h1>
+         <p>Warming that has already occurred is affecting the biological timing (phenology) and geographic range of plant and animal communities Relationships such as predator-prey interactions are affected by these shifts, especially when changes occur unevenly between species.</p>
+        <p id="coral">The oceans absorb about 27% of anthropogenic CO2 emissions, resulting in increased acidity. Even under conservative projections, coral reefs will be severely impacted.</p>
+    </form>
+  </div> 
+</div>
+<!-- popup -->
+
+<div class="bg-modal6">
+  <div class="modal-contents6">
+      <div class="close6">+</div>
+      <form action="">
+        <h1>
+        Warm Today, Cold Tomorrow
+        </h1>
+         <p>Spring flower blooms, summer heat waves, freeze and thaw, growing seasons, and animal migrations are all examples of natural phenomena that follow seasonal patterns. Climate change has altered many of these patterns anywhere in the world—shifting the timing of events like spring snowmelt, creating longer wildfire and growing seasons while reducing the length of time that lakes stay frozen... </p>
+        <p id="warm" > This can affect a wide range of ecological and societal processes. For example, warmer winters make it easier for agricultural pests to survive between growing seasons and create adverse conditions for crops that require winter chill hours to bear fruit the following season.</p>
+    </form>
+  </div> 
+</div>
+
+<!-- JS link -->
+  <script src="./app.js"></script>
+</body>
+</html>

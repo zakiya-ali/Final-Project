@@ -1,0 +1,318 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&family=Press+Start+2P&display=swap');
+
+/* background */
+body {
+  background: url("./bakroundaligned.jpeg") no-repeat fixed center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width:100%;
+  height:auto;
+ }
+
+ /* nav bar */
+.nav {
+  display: inline;
+  position:fixed;
+  margin-top: 1px;
+}
+
+.navbar {
+    padding-right: 30px;
+} 
+
+li {
+    display:inline; 
+    font-family: 'Oxygen', sans-serif;
+    text-decoration-line: none;
+}
+a {
+    color:white;
+}
+a:hover {
+    color:yellow;
+} 
+
+/* Drop down menu */
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 60px;
+  margin-right: 40px;
+  cursor:pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: fixed;
+    top: 12%;
+    left: 45%;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    
+  }
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+  background-color: #f48a4d88;
+}
+
+input:checked + body {
+  background: url("./fire.jpg") /*no-repeat fixed center; */
+}
+  
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(70px);
+}
+  
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*ON OFF MARK*/
+.onoff {
+  position: absolute;
+  text-align: center;
+  display: inline;
+  color: white;
+  top: 16%;
+  left: 41vw;
+  min-height: 1px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+ .on {
+  padding-right: 42px;
+  margin-top: px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#curpage {
+  color: rgb(229, 249, 8);
+  text-decoration: underline;
+}
+
+/* reality mark */
+.decor {
+    color: white;
+    position: fixed;
+    top:8%;
+    left: 45%;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    min-height: 1px;
+   
+    margin:0 auto;
+}
+
+/* Take the Quiz Button*/
+.quizbutton {
+  position: fixed;
+  left: 38%;
+  top: 80%;
+  padding: 15px 10px;
+  font-size: 22px;
+  text-align: center;
+  font-family:'Press Start 2P', cursive; ;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #1c38c6;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(0, 0, 0);
+  word-spacing: -13px;
+
+}
+
+/* .button:hover {background-color: #3e8e41} */
+.quizbutton:hover {background-color: #9e0000}
+
+.quizbutton:active {
+  background-color: #10206c;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(4px);
+}
+
+a:hover{cursor:pointer;}
+
+.popupbtn1,.popupbtn2,.popupbtn3,.popupbtn4,.popupbtn5,.popupbtn6 {
+  background-color: yellow;
+  border: 2px solid white;
+  border-radius: 100%;
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  margin-top: 10px;
+  display: inline-block;
+  position:fixed;
+  
+}
+  
+.popupbtn1{left: 50%;
+  top:50%;
+  position:absolute;
+}
+.popupbtn2{left:60%; top: 70%;position:absolute;}
+.popupbtn3{left:35%; top:10%; position:absolute;}
+.popupbtn4{left:40%; top:40%; position:absolute;}
+.popupbtn5{left:70%; top:30%; position:absolute;}
+.popupbtn6{left:65%; top:20%; position:absolute;}
+    
+.hero-content1,.hero-content2,.hero-content3,.hero-content4,.hero-content5,.hero-content6{
+  width: 10%;
+  height: 10%;
+}
+      
+/*  popup STARTS HERE  */
+.bg-modal1,.bg-modal2,.bg-modal3,.bg-modal4,.bg-modal5, .bg-modal6 {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modal-contents1, .modal-contents2,.modal-contents3,.modal-contents4,.modal-contents5,.modal-contents6 {
+  height: 330px;
+  width: 550px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 4px;
+}
+  
+.close1,.close2,.close3,.close4,.close5,.close6 {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 42px;
+  color: #333;
+  transform: rotate(45deg);
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+  
+  .modal-contents1, .modal-contents2, .modal-contents3,.modal-contents4, .modal-contents5, .modal-contents6 {
+    color:black;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .popuptexttitle{color:black;}
+
+  /* for tablets */
+  @media only screen and (max-width: 600px) 
+    {
+    .onoff {
+      top: 15%;
+      left: 35vw;}
+    .quizbutton{top:80%;
+    left: 26%;} 
+  }
+
+/* for phones */
+  @media only screen and (max-width: 400px) {
+    .quizbutton {
+      left: 17%;
+    }
+    .popupbtn4{left: 30%;
+      top:40%;
+      position:absolute;}
+
+      .popupbtn3{left: 18%;
+        top:23%;
+        position:absolute;}
+
+}
+
+/* responsiveness  of navbar*/
+@media(max-width:472px) {
+  .checkbtn {
+    display: block;
+  }
+  .nav {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(6, 3, 50, 0.582);
+    top: 60px;
+    left: -110%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 30px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #warm {display: none}
+  #rising {display: none;}
+  #coral {display: none;}
+}

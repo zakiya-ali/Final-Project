@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!--FontAwesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <title>Little Steps Big Impacts</title>
+</head>
+
+<body id="bodyy">
+
+  <div id="overlay"></div>
+
+  <!-- nav bar -->
+  <nav>
+    <input type="checkbox" id="check" onclick="removeStuff()">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <ul class="nav">
+      <li class="navbar"><a style="text-decoration: none ;"  href="../index.html">HOME</a></li>
+      <li class="navbar"><a style="text-decoration: none ;" href="../quiz/indexquiz.html">QUIZ</a></li>
+      <li class="navbar"><a style="text-decoration: none ;" href="../contact us/index.html">CONTACT US</a></li>
+      <li class="navbar"><a  id="curpage" href="../About us/Aboutus.html">ABOUT US</a></li>
+    </ul>
+  </nav>
+  
+
+  <!--popupbtn-->
+  <div class="container" id="rvideo">
+    <div class="hero-contentvid" id="hero-contentvid">
+      <div id="description">
+        <h1> We are Little Steps, Big Impact! </h1>
+        <h2> Click here to find out more! </h2>
+      </div>
+      <a href="#" id="popupbtnvid" class="popupbtnvid"><button class="btn" id="popupicon"></button></a>
+    </div>
+</div>
+
+<!-- popup -->
+
+<div class="bg-modalvid">
+  <div class="modal-contentsvid">
+      <div class="closevid">+</div>
+      <form action="">
+        <iframe id="yt" src="https://www.youtube.com/embed/AUDU5rgGXr4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" width="560" height="315"screen onclick="playvid( playvid)"></iframe>
+      </form>
+
+    </div> 
+  </div>
+  <script src="./aboutus.js"></script>
+</body>
+
+</html>
+
+<!-- ?autoplay=1 -->
